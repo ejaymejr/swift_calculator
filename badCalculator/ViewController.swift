@@ -27,7 +27,10 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
+    @IBOutlet weak var mybutton: UIButton!
+    
     
     @IBAction func numericTap(numButton : UIButton)
     {
@@ -50,10 +53,21 @@ class ViewController: UIViewController {
         currentvalue = display.text!
         let num1 = Int(firstvalue)
         let num2 = Int(currentvalue)
-        let total = num1! + num2!
-        display.text = String(total)
+        var total = 0
+        if (num1 > 0 ) {
+            total = num1! + num2!
+        }else{
+            total = num2!
+        }
+        display.text = String(total) 
     }
     
+    @IBAction func allClearTap(acButton: UIButton) {
+        display.text = ""
+        firstvalue = ""
+        currentvalue = ""
+        operation = ""
+    }
     
 }
 

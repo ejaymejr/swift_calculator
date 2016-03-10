@@ -12,8 +12,6 @@
 		4317C1931C9001C500185EC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4317C1911C9001C500185EC8 /* Main.storyboard */; };
 		4317C1951C9001C500185EC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4317C1941C9001C500185EC8 /* Assets.xcassets */; };
 		4317C1981C9001C500185EC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4317C1961C9001C500185EC8 /* LaunchScreen.storyboard */; };
-		4317C1A31C9001C500185EC8 /* badCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4317C1A21C9001C500185EC8 /* badCalculatorTests.swift */; };
-		4317C1AE1C9001C500185EC8 /* badCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4317C1AD1C9001C500185EC8 /* badCalculatorUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +32,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4317C18A1C9001C500185EC8 /* badCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = badCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4317C18A1C9001C500185EC8 /* badCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = badCalculator.app; path = "/Users/emanMac/Desktop/xcode Project/badCalculator/badCalculator/build/Debug-iphoneos/badCalculator.app"; sourceTree = "<absolute>"; };
 		4317C18D1C9001C500185EC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4317C18F1C9001C500185EC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4317C1921C9001C500185EC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4317C1941C9001C500185EC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4317C1971C9001C500185EC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4317C1991C9001C500185EC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4317C19E1C9001C500185EC8 /* badCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = badCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4317C1A21C9001C500185EC8 /* badCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = badCalculatorTests.swift; sourceTree = "<group>"; };
-		4317C1A41C9001C500185EC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4317C1A91C9001C500185EC8 /* badCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = badCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4317C1AD1C9001C500185EC8 /* badCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = badCalculatorUITests.swift; sourceTree = "<group>"; };
-		4317C1AF1C9001C500185EC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4317C19E1C9001C500185EC8 /* badCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = badCalculatorTests.xctest; path = "/Users/emanMac/Desktop/xcode Project/badCalculator/badCalculator/build/Debug-iphoneos/badCalculatorTests.xctest"; sourceTree = "<absolute>"; };
+		4317C1A91C9001C500185EC8 /* badCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = badCalculatorUITests.xctest; path = "/Users/emanMac/Desktop/xcode Project/badCalculator/badCalculator/build/Debug-iphoneos/badCalculatorUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,20 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				4317C18C1C9001C500185EC8 /* badCalculator */,
-				4317C1A11C9001C500185EC8 /* badCalculatorTests */,
-				4317C1AC1C9001C500185EC8 /* badCalculatorUITests */,
-				4317C18B1C9001C500185EC8 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		4317C18B1C9001C500185EC8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4317C18A1C9001C500185EC8 /* badCalculator.app */,
-				4317C19E1C9001C500185EC8 /* badCalculatorTests.xctest */,
-				4317C1A91C9001C500185EC8 /* badCalculatorUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		4317C18C1C9001C500185EC8 /* badCalculator */ = {
@@ -105,24 +86,6 @@
 				4317C1991C9001C500185EC8 /* Info.plist */,
 			);
 			path = badCalculator;
-			sourceTree = "<group>";
-		};
-		4317C1A11C9001C500185EC8 /* badCalculatorTests */ = {
-			isa = PBXGroup;
-			children = (
-				4317C1A21C9001C500185EC8 /* badCalculatorTests.swift */,
-				4317C1A41C9001C500185EC8 /* Info.plist */,
-			);
-			path = badCalculatorTests;
-			sourceTree = "<group>";
-		};
-		4317C1AC1C9001C500185EC8 /* badCalculatorUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4317C1AD1C9001C500185EC8 /* badCalculatorUITests.swift */,
-				4317C1AF1C9001C500185EC8 /* Info.plist */,
-			);
-			path = badCalculatorUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +176,7 @@
 				Base,
 			);
 			mainGroup = 4317C1811C9001C500185EC8;
-			productRefGroup = 4317C18B1C9001C500185EC8 /* Products */;
+			productRefGroup = 4317C1811C9001C500185EC8;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -265,7 +228,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4317C1A31C9001C500185EC8 /* badCalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +235,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4317C1AE1C9001C500185EC8 /* badCalculatorUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +447,7 @@
 				4317C1B41C9001C500185EC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4317C1B51C9001C500185EC8 /* Build configuration list for PBXNativeTarget "badCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +456,7 @@
 				4317C1B71C9001C500185EC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4317C1B81C9001C500185EC8 /* Build configuration list for PBXNativeTarget "badCalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +465,7 @@
 				4317C1BA1C9001C500185EC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
