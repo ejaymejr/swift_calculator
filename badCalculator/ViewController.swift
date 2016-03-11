@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     
     var currentvalue = ""
     
+
+    
     @IBOutlet weak var display: UILabel!
     
     override func viewDidLoad() {
@@ -35,7 +37,7 @@ class ViewController: UIViewController {
     @IBAction func numericTap(numButton : UIButton)
     {
         var numbers = display.text
-        if (numbers) == "0" || (numbers) == "+" {
+        if ((numbers) == "0" || (numbers) == "+" || (numbers) == "-" || (numbers) == "/" || (numbers) == "x" ){
             display.text = (numButton.titleLabel!.text)
         }else{
             numbers = (display.text! + (numButton.titleLabel!.text)!)
@@ -49,17 +51,53 @@ class ViewController: UIViewController {
         operation = "+"
     }
     
+    @IBAction func minusTap(minusButton: UIButton) {
+        firstvalue = display.text!
+        display.text = "-"
+        operation = "-"
+    }
+    
+    @IBAction func divisionTap(divisionButton: UIButton) {
+        firstvalue = display.text!
+        display.text = "/"
+        operation = "/"
+    }
+    
+    @IBAction func multiplyTap(multiplyButton: UIButton) {
+        firstvalue = display.text!
+        display.text = "x"
+        operation = "*"
+    }
+    
     @IBAction func equalsTap(eqButton: UIButton) {
         currentvalue = display.text!
-        let num1 = Int(firstvalue)
-        let num2 = Int(currentvalue)
-        var total = 0
-        if (num1 > 0 ) {
-            total = num1! + num2!
-        }else{
+        let num1 = Float(firstvalue)
+        let num2 = Float(currentvalue)
+        var total : Float = 0
+        switch(true){
+        case (num1 == 0 && num2 == 0):
+            total = 0
+        case (num1 > 0 && num2 > 0 ):
+            switch(operation){
+                case "-":
+                    total = num1! - num2!
+                case "/":
+                    total = num1! / num2!
+                case "*":
+                    total = num1! * num2!
+                default:
+                    total = num1! + num2!
+            }
+            
+        case (num1 > 0 && num2 == 0):
+            total = num1!
+        case (num1 == 0 && num2 > 0):
             total = num2!
+        default:
+            total = 0
         }
-        display.text = String(total) 
+
+        display.text = String(total)
     }
     
     @IBAction func allClearTap(acButton: UIButton) {

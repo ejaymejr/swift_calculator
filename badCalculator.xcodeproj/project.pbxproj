@@ -32,15 +32,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4317C18A1C9001C500185EC8 /* badCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = badCalculator.app; path = "/Users/emanMac/Desktop/xcode Project/badCalculator/badCalculator/build/Debug-iphoneos/badCalculator.app"; sourceTree = "<absolute>"; };
 		4317C18D1C9001C500185EC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4317C18F1C9001C500185EC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4317C1921C9001C500185EC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4317C1941C9001C500185EC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4317C1971C9001C500185EC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4317C1991C9001C500185EC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4317C19E1C9001C500185EC8 /* badCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = badCalculatorTests.xctest; path = "/Users/emanMac/Desktop/xcode Project/badCalculator/badCalculator/build/Debug-iphoneos/badCalculatorTests.xctest"; sourceTree = "<absolute>"; };
-		4317C1A91C9001C500185EC8 /* badCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = badCalculatorUITests.xctest; path = "/Users/emanMac/Desktop/xcode Project/badCalculator/badCalculator/build/Debug-iphoneos/badCalculatorUITests.xctest"; sourceTree = "<absolute>"; };
+		43DEAACA1C92589E00EF5029 /* badCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = badCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43DEAACB1C92589E00EF5029 /* badCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = badCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43DEAACC1C92589E00EF5029 /* badCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = badCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +72,9 @@
 			isa = PBXGroup;
 			children = (
 				4317C18C1C9001C500185EC8 /* badCalculator */,
+				43DEAACA1C92589E00EF5029 /* badCalculator.app */,
+				43DEAACB1C92589E00EF5029 /* badCalculatorTests.xctest */,
+				43DEAACC1C92589E00EF5029 /* badCalculatorUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,7 +108,7 @@
 			);
 			name = badCalculator;
 			productName = badCalculator;
-			productReference = 4317C18A1C9001C500185EC8 /* badCalculator.app */;
+			productReference = 43DEAACA1C92589E00EF5029 /* badCalculator.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4317C19D1C9001C500185EC8 /* badCalculatorTests */ = {
@@ -123,7 +126,7 @@
 			);
 			name = badCalculatorTests;
 			productName = badCalculatorTests;
-			productReference = 4317C19E1C9001C500185EC8 /* badCalculatorTests.xctest */;
+			productReference = 43DEAACB1C92589E00EF5029 /* badCalculatorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		4317C1A81C9001C500185EC8 /* badCalculatorUITests */ = {
@@ -141,7 +144,7 @@
 			);
 			name = badCalculatorUITests;
 			productName = badCalculatorUITests;
-			productReference = 4317C1A91C9001C500185EC8 /* badCalculatorUITests.xctest */;
+			productReference = 43DEAACC1C92589E00EF5029 /* badCalculatorUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -156,6 +159,7 @@
 				TargetAttributes = {
 					4317C1891C9001C500185EC8 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = T3L6H2LUAH;
 					};
 					4317C19D1C9001C500185EC8 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -360,10 +364,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = badCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mcs.badCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -372,10 +379,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = badCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mcs.badCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
